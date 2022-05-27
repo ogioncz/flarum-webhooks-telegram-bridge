@@ -2,7 +2,7 @@
     "name": "ogioncz/flarum-webhooks-telegram-bridge",
     "type": "project",
     "require": {
-        "longman/telegram-bot": "^0.72.0"
+        "longman/telegram-bot": "^0.77.0"
     },
     "license": "MIT",
     "authors": [
