@@ -51,7 +51,17 @@ function createMessagePayload($message) {
 }
 
 
-$config = require __DIR__ . '/config.php';
+$credentials = $_ENV['CREDENTIALS_DIRECTORY'] ?? null;
+if ($credentials !== null) {
+	$config = [
+		'apiKey' => file_get_contents($credentials . '/apiKey'),
+		'botName' => file_get_contents($credentials . '/botName'),
+		'chatId' => file_get_contents($credentials . '/chatId'),
+		'token' => file_get_contents($credentials . '/token'),
+	];
+} else {
+	$config = require __DIR__ . '/config.php';
+}
 
 if (!isset($_GET['token']) || $_GET['token'] !== $config['token']) {
 	http_response_code(403);
