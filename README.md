@@ -25,7 +25,7 @@ This is a bridge between Flarum [Webhooks](https://github.com/FriendsOfFlarum/we
 
 ## Related projects
 
-- [Telegram support for flarum-ext-notify](https://github.com/manelizzard/flarum-notify/pull/6)
+- [Telegram support for (no longer supported) flarum-ext-notify](https://github.com/manelizzard/flarum-notify/pull/6)
 
 ## License
 
