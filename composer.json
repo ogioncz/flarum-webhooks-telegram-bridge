@@ -1,6 +1,7 @@
 {
     "name": "ogioncz/flarum-webhooks-telegram-bridge",
     "type": "project",
+    "description": "Bridge between Flarum Webhooks extension and Telegram",
     "require": {
         "longman/telegram-bot": "^0.77.0"
     },
